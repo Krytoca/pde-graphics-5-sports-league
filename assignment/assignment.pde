@@ -14,8 +14,10 @@ void setup() {
 void draw() {
 
   background(255,255,255);//Background as rgb to make font and shapes smoother
-  PFont font;//Set up additional font
+  PFont font;//Set up additional fonts
+  PFont font2;
   font = loadFont("DejaVuSansMono-18.vlw");
+  font2 = loadFont("DejaVuSans-12.vlw");
   String team1name = "Team Liquid";//List all teams in strings
   String team2name = "100 Thieves";
   String team3name = "Echo Fox";
@@ -51,4 +53,44 @@ void draw() {
   
   textFont(font);
   text("Points",390,130);
+  
+  fill(255,255,255);//Second line of rectangles
+  rect(100,150,100,35);
+  
+  rect(200,150,75,35);
+  
+  rect(275,150,100,35);
+  
+  rect(375,150,100,35);
+  
+  fill(0,0,0);//Second line of table
+  textFont(font2);
+  text(team1name,120,170);
+  
+  text(team1wins,220,170);
+  
+  text(team1losses,290,170);
+  
+  text(team1points,390,170);
+  
+  fill(255,255,255);//Third line of table
+  rect(100,185,100,35);
+  
+  rect(200,185,75,35);
+  
+  rect(275,185,100,35);
+  
+  rect(375,185,100,35);
+  
+  fill(0,0,0);
+  text(team2name,120,205);
+  
+  text(team2wins,220,205);
+  
+  text(team2losses,290,205);
+  
+  text(team2points,390,205);
+  
+  fill(255,255,255);
+  rect(
 }
