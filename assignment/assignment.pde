@@ -91,6 +91,21 @@ void draw() {
   
   text(team2points,390,205);
   
-  fill(255,255,255);
-  rect(
+  fill(255,255,255);//Fourth line of table
+  rect(100,220,100,35);
+  
+  rect(200,220,75,35);
+  
+  rect(275,220,100,35);
+  
+  rect(375,220,100,35);
+  
+  fill(0,0,0);
+  text(team3name,120,240);
+  
+  text(team3wins,220,240);
+  
+  text(team3losses,290,240);
+  
+  text(team3points,390,240);
 }
