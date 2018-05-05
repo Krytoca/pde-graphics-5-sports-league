@@ -13,11 +13,14 @@ void setup() {
 
 void draw() {
 
-  String team1name = "Team Liquid";
+  background(255,255,255);//Background as rgb to make font and shapes smoother
+  PFont font;//Set up additional font
+  font = loadFont("DejaVuSansMono-18.vlw");
+  String team1name = "Team Liquid";//List all teams in strings
   String team2name = "100 Thieves";
   String team3name = "Echo Fox";
   
-  int team1wins = 15;
+  int team1wins = 15;//List statistics in int values
   int team1losses = 8;
   int team2wins = 14;
   int team2losses = 7;
@@ -26,5 +29,26 @@ void draw() {
   int team1points = (team1wins * 2);
   int team2points = (team2wins * 2);
   int team3points = (team3wins * 2);
-
+  
+  fill(255,255,255);//Start first line of table
+  rect(100,100,100,50);
+  
+  rect(200,100,75,50);
+  
+  rect(275,100,100,50);
+  
+  rect(375,100,100,50);
+  
+  fill(0,0,0);//Fill first line of rectangles
+  textFont(font);
+  text("Team",130,130);
+  
+  textFont(font);
+  text("Wins",220,130);
+  
+  textFont(font);
+  text("Losses",290,130);
+  
+  textFont(font);
+  text("Points",390,130);
 }
